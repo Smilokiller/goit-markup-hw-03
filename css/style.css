@@ -7,6 +7,7 @@ a {
 ul {
     list-style-type: none;
     padding: 0px;
+    margin: 0px;
 }
 
 .list {
@@ -16,16 +17,13 @@ ul {
 }
 
 .container-header {
-    margin-left: auto;
-    margin-right: auto;
     width: 1170px;
     margin-left: 215px;
     margin-right: 215px;
 }
 
 .container {
-    margin-left: auto;
-    margin-right: auto;
+
     width: 1170px;
     margin-left: 215px;
     margin-right: 215px;
@@ -83,14 +81,20 @@ ul {
     line-height: 16px;
     letter-spacing: 0.02em;
     color: #212121;
+    
 }
 
 .nav-position li {
     display: inline-flex;
 }
-
+.site-nav .link:hover{
+    border-spacing: 28px;
+    border-bottom: 2px #2196F3 solid;
+    border-radius: 2px;
+}
 .site-nav .link:hover, .contact-nav .link:hover {
     color: #2196F3;
+    
 }
 
 .site-nav .item+.item {
@@ -117,6 +121,7 @@ ul {
 
 .contact-nav .item+.item {
     margin-left: 30px;
+    
 }
 
 .contact-nav .item img {
@@ -277,6 +282,18 @@ ul {
 .social {
     display: flex;
     flex-wrap: wrap;
+    
+}
+.social .item{
+    background: #fff;
+    border-radius: 50%;
+
+}
+.footer .social .item{
+    background: rgba(255, 255, 255, 0.1);
+}
+.social .item:hover{
+    background: #2196F3;
 }
 
 .social .item:first-child {
@@ -494,6 +511,8 @@ footer {
     background-color: #F5F4FA;
     border-radius: 4px;
     padding: 6px 22px;
+    margin-bottom: 50px;
+    
 }
 
 .example-nav .link:hover {
@@ -529,16 +548,29 @@ footer {
     display: inline-block;
     width: calc((100% - 60px)/3);
     margin-right: 30px;
+    margin-bottom: 30px;
     border: 1px solid #EEEEEE;
     box-sizing: border-box;
+    
+    
+    
 }
 
+.example-li img{
+    width: 100%;
+}
 .example-li:nth-child(3n+3) {
     margin-right: 0px;
 }
 
 .example-posiion {
+    display: inline-block;
     text-align: center;
+    margin-top: 0px;
+    
+}
+ul.example-posiion{
+    margin-top: 0px;
 }
 
 .example-text {
