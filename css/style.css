@@ -33,6 +33,10 @@ ul {
     padding-bottom: 92px;
 }
 
+.container:last-child {
+    padding-bottom: 21px;
+}
+
 /* header */
 
 .page-nav {
@@ -385,6 +389,7 @@ footer {
     display: flex;
     align-items: baseline;
     border-bottom: 1px solid #ECECEC;
+    padding-top: 48px;
 }
 
 .footer-social {
@@ -393,6 +398,7 @@ footer {
 
 .footer-contacts {
     letter-spacing: 0.03em;
+    margin-bottom: 0px;
 }
 
 .footer-social .social .item:first-child {
@@ -406,9 +412,9 @@ footer {
 
 .social {
     margin: 0;
-    
 }
-.footer-social .social .item:last-child{
+
+.footer-social .social .item:last-child {
     margin-right: 0px;
 }
 
@@ -435,10 +441,12 @@ footer {
     color: rgba(255, 255, 255, 0.6);
 }
 
-
+.footer-element {
+    margin-bottom: 21px;
+}
 
 .footer-element:first-child {
-    margin-right: 69px;
+    margin-right: 89px;
 }
 
 .footer-element:nth-child(2) {
@@ -458,19 +466,39 @@ footer {
 
 /* example */
 
+.portfolio-nav {
+    align-items: center;
+}
+
+.portfolio-nav li {
+    display: inline-flex;
+    margin-right: 8px;
+}
+
+.portfolio-nav li:last-child {
+    margin-right: 0px;
+}
+
+.example-nav {
+    text-align: center;
+}
+
 .example-nav .link {
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 26px;
-    text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    padding: 6px 22px;
 }
 
 .example-nav .link:hover {
     color: #FFFFFF;
+    background-color: #2196F3;
 }
 
 .example-name {
@@ -481,6 +509,8 @@ footer {
     line-height: 36px;
     letter-spacing: 0.06em;
     color: #212121;
+    margin-top: 20px;
+    margin-bottom: 4px;
 }
 
 .example-type {
@@ -491,4 +521,26 @@ footer {
     line-height: 30px;
     letter-spacing: 0.03em;
     color: #757575;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.example-li {
+    display: inline-block;
+    width: calc((100% - 60px)/3);
+    margin-right: 30px;
+    border: 1px solid #EEEEEE;
+    box-sizing: border-box;
+}
+
+.example-li:nth-child(3n+3) {
+    margin-right: 0px;
+}
+
+.example-posiion {
+    text-align: center;
+}
+
+.example-text {
+    margin-left: 24px;
 }
